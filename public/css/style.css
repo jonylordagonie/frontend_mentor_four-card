@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+html{
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/8589221_cb8913.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1,h2,h3,h4,h5,h6,p,span{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    font-size: 38px;
+}
+h2{
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+    font-size: 38px;
+}
+h4{
+    font-weight: 600;
+    font-size: 20px;
+    color: hsl(234, 12%, 34%);
+}
+span{
+    color: hsl(229, 6%, 66%);
+}
+
+#presentation{
+    max-width: 1440px;
+    background-color: hsl(0, 0%, 98%);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    box-shadow: 0px 4px 12px 0px hsl(229, 6%, 66%);
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.titleDescription{
+    text-align: center;
+    width: 60%;
+    margin: 20px;
+    margin-bottom: 50px;
+}
+.cardContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+    width: 100%;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.card23{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.card{
+    border-top: 5px solid;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0px 4px 12px 0px hsl(229, 6%, 66%);
+    border-radius: 10px;
+    width: 250px;
+    min-width: 160px;
+    box-sizing: border-box;
+    min-height: 316px;
+}
+.card h4{
+    margin-bottom: 15px;
+}
+.card span{
+    font-size: 15px;
+    font-weight: 300;
+    display: block;
+    width: 90%;
+    margin-bottom: 50px;
+}
+.imgContainer{
+    margin-top: 30px;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 64px;
+}
+.cyan{
+    border-color: hsl(180, 62%, 55%);
+}
+.cyan .imgContainer{
+    background-image: url("../img/icon-supervisor.svg");
+}
+.red{
+    border-color: hsl(0, 78%, 62%)
+}
+.red .imgContainer{
+    background-image: url("../img/icon-team-builder.svg");
+}
+.orange{
+    border-color: hsl(34, 97%, 64%)
+}
+.orange .imgContainer{
+    background-image: url("../img/icon-karma.svg");
+}
+.blue{
+    border-color: hsl(212, 86%, 64%)
+}
+.blue .imgContainer{
+    background-image: url("../img/icon-calculator.svg");
+}
+@media screen and (max-width: 885px) {
+    .cardContainer{
+        flex-direction: column;
+    }
+    .card23{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 375px) {
+    h1,h2{
+        text-align: center;
+        font-size: 24px;
+    }
+    h4{
+        font-size: 18px;
+        font-size: 20px;
+    }
+    .titleDescription{
+        width: 100%;
+    }
+    #presentation{
+        padding: 20px;
+    }
+    .card{
+        width: 100%;
+        padding: 10px;
+    }
+}
